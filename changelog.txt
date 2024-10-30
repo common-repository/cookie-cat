@@ -1,0 +1,98 @@
+== Upgrade Notice ==
+= 1.4.6 =
+Now supports PHP 8.1 and PHP 8.2 
+
+= 1.4.5 = 
+Tested with PHPUnit 8, WordPress 5.3.2 and WordPress Multi Site, PHP 7.3 and PHP 7.4
+
+= 1.4.4 =
+Tested with Gutenberg / WordPress 5.0. Now depends on oik v3.2.8
+
+= 1.4.3 = 
+Tested with WordPress 4.8. Tested with PHP 7.1. Now depends on oik v3.1.
+
+= 1.4.2 =
+Fixes issue #2 - shortcode displays &nbsp... missing ;
+
+= 1.4.1 =
+Tested with WordPress 4.4, including WordPress Multi Site
+
+= 1.4 =
+Tested with WordPress 4.0, including WordPress Multi Site
+
+= 1.3 =
+Tested with WordPress 3.9
+
+= 1.2 =
+Changes to satisfy WordPress plugin review. Works with oik version 1.13 and above 
+
+= 1.1 =
+Now loads the XML directly from cookie-cat.co.uk
+
+= 1.0 = 
+Requires oik version 1.13 or higher
+
+== Changelog ==
+= 1.4.6 =
+* Fixed: PHP 8.2: fix deprecated ${var} in strings #5
+* Tested: With WordPress 6.4.1 and WordPress Multisite
+* Tested: With PHPUnit 9.6
+* Tested: With PHP 8.2
+
+= 1.4.5 = 
+* Changed: Update for PHPUnit 8,[github bobbingwide cookie-cat issues 4]
+* Tested: With WordPress 5.3.2 and WordPress Multi Site
+* Tested: With PHP 7.3 and PHP 7.4
+* Tested: With PHPUnit 8
+
+= 1.4.4 =
+* Changed: Depends on oik v3.2.8, [github bobbingwide cookie-cat issues 3]
+* Changed: Uses https to Load the XML file from cookie-cat.co.uk
+* Changed: Uses https for link to cookie-cat.co.uk design
+* Tested: With WordPress 5.0
+* Tested: With Gutenberg 4.6.1
+
+= 1.4.3 =
+* Changed: Priority for 'admin_notices' hook 
+* Changed: Now depends on oik v3.1
+* Tested: With PHP 7.1 
+* Tested: With WordPress 4.8 and WordPress Multisite
+
+= 1.4.2 =
+* Fixed: Issue #2  
+* Changes: Merged pull request from jherve - __qca no longer used by Jetpack
+* Changes: Updated FAQ in line with oik-plugins and cookie-cat websites
+
+= 1.4.1 =
+* Changed: Now depends on oik v2.5
+* Tested: With WordPress 4.4
+* Changed: Improved some docblock comments and changed Copyright date on source files
+* Changed: Updated oik-activation logic
+
+= 1.4 = 
+* Changed: Improved some docblocks.
+* Changed: Now depends on oik v2.2
+* Changed: Responds to "oik_add_shortcodes" action to define the "cookies" shortcode
+* Tested: With WordPress 4.0
+
+= 1.3 = 
+* Changed: Slight restructuring for improved documentation
+* Changed: Now dependent upon oik v2.1 or higher
+
+= 1.2 = 
+* Added: Warning messages about information that is passed to the cookie-cat server when using "Load XML"
+* Tested: Works with WordPress 3.6
+* Added: Added table heading tags for the cookie-cat table.
+
+= 1.1 = 
+* Added: admin interface to load a new customised XML file from cookie-cat.co.uk
+* Added: will now produce links to prompt installation, upgrade or activation of oik
+* Added: temp=N|Y parameter for the [cookies] shortcode to advanced users to play with the "Extras" field
+* Added: option field to set browser=Y by default
+* Added: Extras field for adding special codes for plugins which aren't really active. Defaults to ",wordpress,PHP"
+* Changed: cc_mapping.xml file updated to reflect latest mapping in cookie-cat.co.uk
+* Changed: readme.txt file contains basic instructions for updating the XML mapping file. New screenshots.
+* Changed: Minor changes to tracing
+
+= 1.0 =
+* initial version. Works with oik version 1.13
